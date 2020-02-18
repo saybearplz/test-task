@@ -1,0 +1,33 @@
+.nav-menu
+  display: flex
+  flex-direction: column
+
+  &__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 10px
+    border: 2px solid transparent
+    border-radius: 10px
+    padding: 20px
+    color: #000
+    transition: all .3s
+    &:last-child
+      margin-bottom: 0
+
+    &.nuxt-link-active
+      background: rgba(0,0,0,.2)
+      .nav-menu__name
+        font-weight: 500
+
+    &:hover
+      color: #aecd40
+      background: none
+      border: 2px solid #aecd40
+
+  &__icon
+    font-size: 48px
+
+  &__name
+    font-size: 15px
+    font-weight: 300
